@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .first-heading{
+            color: darkgoldenrod;
+        }
+        h1{
+            background-color: cyan;
+            color: aquamarine;
+        }
+        #third{
+            color: red;
+        }
+
+        h1{
+            color: cadetblue;
+        }
+        h1{
+            color: blue !important ;
+        }
+        p{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="first-heading">my heading number-1</h1>
+    <h1 class="first-heading">my heading number-2</h1>
+    <h1 id="third" class="first-heading" style="color:salmon ;">my heading number-3</h1>
+    <h1 class="first-heading">my heading number-4</h1>
+
+    <p>this is my text description-1</p>
+    <p>this is my text description-2</p>
+    <p>this is my text description-3</p>
+    <p>this is my text description-4</p>
+    <p>this is my text description-5</p>
+</body>
+</html>
